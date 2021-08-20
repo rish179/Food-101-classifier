@@ -11,15 +11,15 @@ Data Augmentation based on pytorch Transformation to add rotation,flip and conve
 
 ##2 classifier models:
 
-###1. Mobilenetv2:
+### 1. Mobilenetv2:
 Model trained on preTrained parameters to save time. 
 
-###2. Resnet 50:
+### 2. Resnet 50:
 Based on Transfer Learning,pretrained model from PyTorch library.
 created the last layer of 101 classes and added to the pretrained model. Ran the train function.
 
-##Case study of models on FOOD101 Dataset.
-###Data Augmentation Function:
+## Case study of models on FOOD101 Dataset.
+### Data Augmentation Function:
 We used the cv2 and numpy, first we divided the frame into 5 equal parts and used it as the width of the image. To maintain aspect ratio we took the present ratio of the image and took the ratio as a constant. Then we calculated the height of the resultant image maintaining the aspect ratio.
 We then stacked the images in a single image using hstack function.
 
@@ -30,7 +30,7 @@ We used the function to divide dataset i to test and train folders. We used the 
 For data preprocessing we used PyTorch Transforms function. We rotated/flipped the images and then more importantly converted them into tensors to load them into the dataloader.
 These dataloaders then can be loaded into model pipelines.
 
-###Mobilenet_v2:
+### Mobilenet_v2:
 We created mobilenet_v2 model and used pretrained parameters to save time and increase accuracy . It would be  pretrained. 
  It provided accuracy of < 80%.
 I also tried transfer learning using pretrained  model present in PyTorch library and changing last layer to our target of 101 classes. If ot worked ot will provide accuracy of 90% with atmax 50 epochs.
