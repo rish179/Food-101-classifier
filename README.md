@@ -38,6 +38,7 @@ Resnet 50:
 Just like the mobilenet_v2, we used the model from PyTorch library, and replaced the last layer with our 101 class layer.We created a function to train and print the loss and accuracy values.
 We trained it with our dataloader. It provided maximum accuracy of 75-80% on 10 iteration which can go up on more iterations. It took 3-4 hours to train model.
 
-
+## Future Steps
+We can ensemble the 2 models to create a single more accurate predictions. 
 
 
