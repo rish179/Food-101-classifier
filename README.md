@@ -9,7 +9,7 @@ Devided the dataset into train and test classes based on test files segregating 
 
 Data Augmentation based on pytorch Transformation to add rotation,flip and converrting dataset into tensors.
 
-##2 classifier models:
+## 2 classifier models:
 
 ### 1. Mobilenetv2:
 Model trained on preTrained parameters to save time. 
